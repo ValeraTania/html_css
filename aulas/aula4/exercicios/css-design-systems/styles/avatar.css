@@ -1,0 +1,26 @@
+:root{
+    --radius: 4px;
+    --size: 8px;
+}
+
+
+.avatar--small {
+    border-radius: var(--radius);
+    height: calc(var(--size) * 3);
+    width: alc(var(--size) * 3);
+}
+
+.avatar--medium{
+    border-radius: calc(var(--radius) * 2);
+    height: calc(var(--size) * 4);
+    width: alc(var(--size) * 4);
+ 
+}
+
+
+.avatar--large{
+    border-radius: calc(var(--radius) * 3);
+    height: calc(var(--size) * 6);
+    width: alc(var(--size) * 6);
+
+}
