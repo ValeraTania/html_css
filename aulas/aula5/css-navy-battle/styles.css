@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+html,
+body {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-po--position: 16px;
+    background: rgba(10, 10, 10, 1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    color: white;
+    font-po--position: 12px;
+}
+
+.board {
+    border: 1px solid rgba(50, 50, 50, 1);
+    background: rgba(20, 20, 20, 1);
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cell {
+    border: 0.5px dashed rgba(50, 50, 50, 1);
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.target {
+    background-color: rgb(94, 94, 94);
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background: rgb(87, 64, 236);
+    position: absolute;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+pre {
+    display: inline;
+}
+
+
+
+/* Coloca o teu CSS a partir daqui */
+:root{
+    --position:40px;
+}
+
+
+.ball-0 {
+    left: calc(var(--position)*3);
+    top:calc(var(--position)*1);
+
+}
+
+.ball-1 {
+    bottom: calc(var(--position)*2);
+    left: calc(var(--position)*2);
+}
+
+.ball-2 {
+    right: calc(var(--position)*1);
+    bottom: calc(var(--position)*2);
+}
+
+.ball-3 {
+    top: calc(var(--position)*3);
+    left: calc(var(--position)*5);
+}
+
+.ball-4 {
+    bottom: calc(var(--position)*1);
+    right: calc(var(--position)*3);
+}
+
+.ball-5 {
+    left: calc(var(--position)*4);
+    bottom: calc(var(--position)*3);
+    
+}
+
+.ball-6 {
+    top: calc(var(--position)*1);
+    left: calc(var(--position)*3);
+}
+
+.ball-7 {
+    bottom: calc(var(--position)*1);
+    left: calc(var(--position)*3);
+}
+
+.ball-8 {
+    top: calc(var(--position)*3);
+    right: calc(var(--position)*4);
+}
+
+.ball-9 {
+    right: calc(var(--position)*0);
+}
+
+.ball-10 {
+    top: calc(var(--position)*1);
+    left: calc(var(--position)*2);
+}
