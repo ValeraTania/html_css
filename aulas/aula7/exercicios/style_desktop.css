@@ -1,8 +1,57 @@
-nav{
-    width: 40%;
-    justify-content: left;
+
+
+
+main{
+    justify-content: var(--center);
+    width: 70%;
 }
 
-nav div{
+.nav {
+    justify-content: space-between;
 
+}
+
+.nav--links{
+    justify-content: left;
+    gap: 1rem;
+
+}
+
+.nav--article-bottom{
+    text-align: var(--center);
+    visibility: hidden;
+}
+
+.nav--article a {
+    text-decoration: none;
+}
+
+
+
+.nav--article a{
+    color: var(--yellow);
+
+}
+
+.card--container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card{
+    width: 25%;
+    flex-direction: column;
+    justify-content: var(--center);
+    align-items: var(--center);
+    padding: 0.5rem;
+}
+
+img{
+    width: 100%;
+}
+
+.card--content{
+    padding: 0.10rem;
 }

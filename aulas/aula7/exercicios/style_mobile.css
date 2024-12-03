@@ -2,3 +2,20 @@ img,.card--content{
     transform: translate(-30px, 0px);
 }
 
+img{
+    margin-right: 16px;
+}
+
+.nav--article-bottom{
+    text-align: var(--center);
+    padding-top: var(--padding);
+}
+
+.nav--article-bottom a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.nav--article{
+    visibility: hidden;
+}
