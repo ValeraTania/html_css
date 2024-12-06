@@ -1,1 +1,242 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0;
+  padding: 16px;
+  width: 100%;
+  border-bottom: 1px solid #F5F5F5;
+}
+nav a:first-child {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  padding: 8px 16px;
+  background: #fff;
+  border-radius: 0;
+}
+nav a:first-child:hover {
+  cursor: pointer;
+}
+nav a:last-child {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  background: #000;
+  border-radius: 0;
+}
+nav a:last-child:hover {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  width: 90%;
+  gap: 8px;
+}
+header header p {
+  font-size: 16px;
+}
+header .header_cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  gap: 16px;
+}
+header a:first-child {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  background: #0064DA;
+  border-radius: 0;
+}
+header a:first-child:hover {
+  cursor: pointer;
+}
+header a:last-child {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  background: #000;
+  border-radius: 0;
+}
+header a:last-child:hover {
+  cursor: pointer;
+}
+header .header--video {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 8px;
+}
+header .header--video a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  background: #0064DA;
+  border-radius: 32px;
+  width: 20%;
+  transform: translate(130%, -60%);
+}
+header .header--video a:hover {
+  cursor: pointer;
+}
+
+.simple_works {
+  background: #F5F5F5;
+  font-size: 16px;
+}
+.simple_works img {
+  width: 90%;
+  padding: 8px;
+}
+
+.solutions {
+  font-size: 16px;
+}
+
+.solutions_cards--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: #F5F5F5;
+}
+
+.solutions_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C4C4C4;
+  background: #fff;
+  width: 30%;
+  padding: 16px;
+}
+.solutions_cards .solutions_cards--img {
+  background: #0064DA;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.innovative_options a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  padding: 8px 16px;
+  background: #fff;
+  border-radius: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C4C4C4;
+}
+.innovative_options a:hover {
+  cursor: pointer;
+}
+
+.innovative_card--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  flex-wrap: wrap;
+  padding: 8px;
+  gap: 8px;
+}
+
+.innovative_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  width: 45%;
+  padding: 4px;
+  gap: 16px;
+  text-align: start;
+}
+.innovative_card .innovative_card--img {
+  width: 100%;
+  height: 150px;
+  background: #C4C4C4;
+  border-radius: 4px;
+}
+.innovative_card .innovative_card--author {
+  display: flex;
+  gap: 16px;
+}
+.innovative_card .innovative_card--author--img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #C4C4C4;
+}
+.innovative_card a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  padding: 8px 16px;
+  background: #fff;
+  border-radius: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C4C4C4;
+}
+.innovative_card a:hover {
+  cursor: pointer;
+}
+
+.cta {
+  background: #0064DA;
+  color: #fff;
+  width: 100%;
+  height: 200px;
+}
+.cta a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #0064DA;
+  padding: 8px 16px;
+  background: #fff;
+  border-radius: 0;
+}
+.cta a:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page | Exercicio Final</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main class="container">
     <nav>
-        <img src="" alt="logo">
+        <img src="assets/logo.png" alt="logo">
         <div>
-            <button>Sign in</button>
-            <button>Sign up</button>
+            <a href="#">Sign in</a>
+            <a href="#">Sign up</a>
         </div>
     </nav>
 
@@ -19,20 +21,20 @@
         <p>Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
 
         <div class="header_cta">
-            <button>Set a free trial</button>
-            <button>Learn more</button>
+            <a href="#">Set a free trial</a>
+            <a href="#">Learn more</a>
+        </div>
+
+        <div class="header--video">
+            <video src="assets/video.mp4" controls autoplay></video>
+            <a href="#">Watch more</a>
         </div>
     </header>
-
-    <section class="video">
-        <video src=""></video>
-        <button>Watch more</button>
-    </section>
 
     <section class="simple_works">
         <h2>How Simple Works</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga beatae soluta earum necessitatibus odio asperiores obcaecati minus quibusdam accusamus? Excepturi iure consequatur esse amet nisi hic sapiente facere sed.</p>
-         <img src="" alt="">
+         <img src="assets/hero-image.png" alt="hero-image">
     </section>
 
     <section class="solutions">
@@ -40,32 +42,108 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam exercitationem in itaque doloribus quam esse necessitatibus sequi, architecto laudantium nemo ipsum est ullam neque, adipisci repellat eveniet nobis magnam excepturi? </p>
     </section>
 
-    <section class="solutions_cards">
+    <section class="solutions_cards--container">
+        <div class="solutions_cards">
+            <div class="solutions_cards--img"></div>
+            <p class="solutions_cards--subtitle">Headless CMS</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
 
+        <div class="solutions_cards">
+            <div class="solutions_cards--img"></div>
+            <p class="solutions_cards--subtitle">Headless CMS</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="solutions_cards">
+            <div class="solutions_cards--img"></div>
+            <p class="solutions_cards--subtitle">Headless CMS</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="solutions_cards">
+            <div class="solutions_cards--img"></div>
+            <p class="solutions_cards--subtitle">Headless CMS</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="solutions_cards">
+            <div class="solutions_cards--img"></div>
+            <p class="solutions_cards--subtitle">Headless CMS</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="solutions_cards">
+            <div class="solutions_cards--img"></div>
+            <p class="solutions_cards--subtitle">Headless CMS</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
     </section>
 
     <section class="innovative">
-        <h2></h2>
+        <h2>The most innovative businesses choose Simple</h2>
         <div class="innovative_options">
-
+            <a href="#">Development</a>
+            <a href="#">Blockchain</a>
+            <a href="#">Nextjs</a>
+            <a href="#">Reactjs</a>
         </div>
-
+    <div class="innovative_card--container">
         <div class="innovative_card">
-            <img src="" alt="">
-            <div class="innovative_card--tags"></div>
+            <div class="innovative_card--img"></div>
+            <div class="innovative_card--tags">
+                <a href="#">Development</a>
+                <a href="#">Blockchain</a>
+            </div>
             <p>"How HubSpot saved 25% on developing costs by switching to Simple."</p>
             <div class="innovative_card--author">
-                <img src="" alt="">
+                <div class="innovative_card--author--img"></div>
                 <p>By Harry Potter</p>
             </div>
         </div>
 
-
+        <div class="innovative_card">
+            <div class="innovative_card--img"></div>
+            <div class="innovative_card--tags">
+                <a href="#">Development</a>
+                <a href="#">Blockchain</a>
+            </div>
+            <p>"How HubSpot saved 25% on developing costs by switching to Simple."</p>
+            <div class="innovative_card--author">
+                <div class="innovative_card--author--img"></div>
+                <p>By Harry Potter</p>
+            </div>
+        </div>
+        <div class="innovative_card">
+            <div class="innovative_card--img"></div>
+            <div class="innovative_card--tags">
+                <a href="#">Development</a>
+                <a href="#">Blockchain</a>
+            </div>
+            <p>"How HubSpot saved 25% on developing costs by switching to Simple."</p>
+            <div class="innovative_card--author">
+                <div class="innovative_card--author--img"></div>
+                <p>By Harry Potter</p>
+            </div>
+        </div>
+        <div class="innovative_card">
+            <div class="innovative_card--img"></div>
+            <div class="innovative_card--tags">
+                <a href="#">Development</a>
+                <a href="#">Blockchain</a>
+            </div>
+            <p>"How HubSpot saved 25% on developing costs by switching to Simple."</p>
+            <div class="innovative_card--author">
+                <div class="innovative_card--author--img"></div>
+                <p>By Harry Potter</p>
+            </div>
+        </div>
+    </div>
     </section>
 
     <section class="cta">
-        <h2>Ready to get started</h2>
-        <button>Learn More</button>
+        <h2>Ready to get started?</h2>
+        <a href="#">Learn More</a>
     </section>
 
     <footer>
@@ -96,8 +174,9 @@
                     <li>Command line</li>
                 </ul>
             </div>
-            <img src="" alt="">
+            <img src="assets/logo-full.png" alt="logo-full">
         </div>
     </footer>
+</main>
 </body>
 </html>

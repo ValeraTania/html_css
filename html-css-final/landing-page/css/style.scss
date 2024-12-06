@@ -1,1 +1,176 @@
 
+@import 'typography';
+@import '_colors';
+@import '_button';
+@import '_mixins';
+
+body{
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    @include display();
+    text-align: center;
+    width: 100%;
+}
+
+nav{
+    @include display(flex,row,center,space-between);
+    padding: 16px;
+    width: 100%;
+    border-bottom: 1px solid $container_grey;
+
+
+        a:first-child{
+            @include button();
+        }
+
+        a:last-child {
+            @include button($black,$white);
+        }
+}
+
+header{
+    @include display();
+    width: 90%;
+    gap: 8px;
+
+    
+
+    header p{
+        font-size: $subtitle;
+    }
+    
+    .header_cta{
+        @include display(flex,row);
+        gap: 16px;
+    }
+
+    a:first-child{
+        @include button($blue,$white);
+    }
+    a:last-child{
+        @include button($black,$white);
+    }
+
+    .header--video{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 8px;
+
+        a{
+            @include button($blue,$white,32px);
+            width: 20%;
+            transform: translate(130%,-60%);
+
+        }
+    }
+}
+
+.simple_works{
+    background: $container_grey;
+    font-size: $subtitle;
+
+    img{
+        width: 90%;
+        padding: 8px;
+    }
+}
+
+.solutions{
+    font-size: $subtitle;
+}
+.solutions_cards--container{
+    @include display($direction:row);
+    flex-wrap: wrap;
+    gap: 16px;
+    background: $container_grey;
+
+}
+
+.solutions_cards{
+    @include display($radius:4px);
+    @include border();
+    background: $white;
+    width: 30%;
+    padding: 16px;
+    
+
+    .solutions_cards--img{
+        background: $blue;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+    }
+
+    
+}
+
+.innovative_options {
+
+    a{
+        @include button($radius:16px);
+        @include border();
+
+    }
+
+    
+}
+
+.innovative_card--container{
+    @include display($direction:row);
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 8px;
+}
+
+.innovative_card{
+    @include display();
+    width: 45%;
+    padding: 4px;
+    gap: 16px;
+    text-align: start;
+
+
+
+    .innovative_card--img{
+        width: 100%;
+        height: 150px;
+        background: $card-default;
+        border-radius: 4px;
+    }
+    .innovative_card--author{
+        display: flex;
+        gap: 16px;
+    }
+
+    .innovative_card--author--img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: $card-default;
+    }
+
+    a{
+        @include button($radius:16px);
+        @include border();
+
+    }
+}
+
+.cta{
+    background: $blue;
+    color: $white;
+    width: 100%;
+    height: 200px;
+
+    a{
+        @include button($white,$blue);
+    }
+}

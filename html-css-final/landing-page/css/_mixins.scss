@@ -1,0 +1,15 @@
+@mixin display($display:flex,$direction:column,$align:center,$justify:center,$radius:0){
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    border-radius: $radius;
+
+
+}
+
+@mixin border($b_width:1px,$b_style:solid,$b_color:$card-default){
+    border-width: $b_width;
+    border-style: $b_style;
+    border-color: $b_color;
+}
