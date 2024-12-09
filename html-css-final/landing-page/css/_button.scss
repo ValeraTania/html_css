@@ -1,5 +1,5 @@
-@mixin button($bg: $white,$color:$black,$radius:0) {
-    font-size: $paragraph;
+@mixin button($bg: $white,$color:$black,$radius:0,$size:$paragraph) {
+    font-size: $size;
     text-decoration: none;
     color: $color;
     padding: 8px 16px;
