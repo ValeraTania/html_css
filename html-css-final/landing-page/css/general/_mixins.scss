@@ -1,9 +1,10 @@
-@mixin display($display:flex,$direction:column,$align:center,$justify:center,$radius:0){
+@mixin display($display:flex,$direction:column,$align:center,$justify:center,$radius:0,$gap:16px){
     display: $display;
     flex-direction: $direction;
     align-items: $align;
     justify-content: $justify;
     border-radius: $radius;
+    gap: $gap;
 
 
 }

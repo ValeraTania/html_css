@@ -1,0 +1,52 @@
+footer{
+
+    border-top: 1px solid $container_grey;
+    margin-top: 40px;
+    width: 100%;
+    font-size: $paragraph;
+    font-weight: normal;
+    padding: 40px 0;
+
+    p{
+        font-size: $paragraph;
+    }
+
+    
+    input{
+        @include border($b_color:$container_grey);
+        color: $container_grey;
+        padding: 8px 16px;
+        font-size: $paragraph;
+
+        &:enabled{
+            color: $black;
+        }
+    }
+
+
+    button{
+        @include button($black,$white);
+        border: none;
+
+    }
+
+    .footer_info{
+        @include display($direction:row,$gap:24px);
+    }
+
+    ul{
+        list-style: none;
+        
+        li{
+            padding: 4px 8px;
+        }
+
+        li:first-child{
+            font-weight: bold;
+        }
+    }
+
+    img{
+        padding: 40px 0;
+    }
+}

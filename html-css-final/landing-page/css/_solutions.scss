@@ -1,0 +1,60 @@
+.solutions{
+    font-size: $subtitle;
+    padding: 40px 0;
+
+    p{
+        width: 80%;
+        justify-self: center;
+}
+}
+
+.solutions_cards--container{
+    background: $container_grey;
+
+}
+
+.solutions_cards--content{
+    @include display($direction:row);
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+
+.solutions_cards{
+    @include display($radius:4px);
+    @include border();
+    background: $white;
+    width: 35%;
+    padding: 12px;
+    transform: translate(0, -24px);
+
+    
+    .solutions_cards--subtitle{
+        font-size: $paragraph;
+    }
+
+    p{
+        font-size: $card--p;
+    }
+
+    .solutions_cards--img{
+        background: $blue;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+    }
+
+    &:hover{
+        background: $blue;
+        color: $white;
+        cursor: pointer;
+        border: none;
+
+        &:hover  .solutions_cards--img{
+            background-color: $white;
+        }
+    }
+
+    
+}

@@ -1,0 +1,33 @@
+header{
+    @include display();
+    width: 90%;
+    font-size: $subtitle;
+
+    
+    .header_cta{
+        @include display(flex,row);
+    }
+
+    a:first-child{
+        @include button($blue,$white);
+    }
+    a:last-child{
+        @include button($black,$white);
+    }
+
+    .header--video{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 8px;
+
+        a{
+            @include button($blue,$white,32px);
+             align-self: center;
+             transform: translate(0,-60%);
+             width: 110px;
+
+        }
+    }
+}

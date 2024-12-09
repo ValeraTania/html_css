@@ -1,0 +1,75 @@
+.innovative{
+    @include display();
+    padding: 40px 0;
+    gap: 16px;
+
+
+}
+
+.innovative_options {
+@include display($direction:row);
+gap: 16px;
+
+
+a{
+    @include button($radius:16px,$size:$card--p);
+    @include border();
+
+}
+
+a:first-child{
+    @include button($blue,$white,$radius:16px,$size:$card--p);
+    border: 0;
+}
+
+
+}
+
+.innovative_card--content{
+@include display($direction:row);
+flex-wrap: wrap;
+padding: 8px;
+gap: 8px;
+}
+
+.innovative_card{
+@include display($align:left);
+width: 45%;
+padding: 4px;
+gap: 16px;
+text-align: start;
+font-size: $card--p;
+
+
+
+.innovative_card--img{
+    width: 100%;
+    height: 150px;
+    background: $card-default;
+    border-radius: 4px;
+}
+
+a{
+    @include button($radius:16px,$size:$card--p);
+    @include border();
+}
+
+a:last-child{
+    @include button($blue,$white,$radius:16px,$size:$card--p);
+    border: 0;
+}
+
+.innovative_card--author{
+    @include display($direction:row,$justify:left);
+    gap: 8px;
+}
+
+.innovative_card--author--img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $card-default;
+}
+
+
+}

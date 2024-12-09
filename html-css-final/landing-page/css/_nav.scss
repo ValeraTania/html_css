@@ -1,0 +1,34 @@
+nav{
+    @include display(flex,row,center,space-between);
+    padding: 16px 24px;
+    width: 100%;
+    border-bottom: 1px solid $container_grey;
+
+    .nav--left-info{
+        @include display($direction:row);
+        padding: 0 24px;
+    }
+
+    .nav--menu{
+        display: none;
+
+        a{
+        @include button();
+    }
+    }
+
+    .nav--buttons{
+        @include display($direction:row);
+      padding: 0 24px;
+
+    
+
+        a:first-child{
+            @include button();
+        }
+
+        a:last-child {
+            @include button($black,$white);
+        }
+    }
+}
