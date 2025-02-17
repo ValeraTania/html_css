@@ -1,0 +1,36 @@
+@import '../mixins';
+
+header{
+    background-image: url("/assets/splash-screen.webp");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    @include display ($gap:0);
+    align-items: start;
+    justify-content: flex-end;
+
+ 
+
+   h1{
+        color: $white;
+        font-weight: normal;
+        padding: 16px;
+    }
+
+     a{
+        @include button();
+          }
+}
+
+@media  (min-width:750px) {
+  header{
+    justify-content: start;
+
+    h1{
+      padding: 54px  0 0 148px;
+    }
+
+  a {
+    margin: 16px 0 0 148px ;
+  }
+}}

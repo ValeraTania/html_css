@@ -1,0 +1,36 @@
+.furniture-images,.real-life-spaces{
+    text-align: center;
+    padding: 48px 16px;
+}
+
+.furniture-images-photos,.real-life-spaces-photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 28px;
+    justify-content: center;
+
+
+    img{
+        width: 175px;
+        height: 175px;
+        border-radius: 4px;
+    }
+
+}
+
+@media  (min-width:750px) {
+    
+
+    .furniture-images-photos{
+        gap: 24px;
+
+        img{
+            width: 390px;
+            height: 220px;
+        }
+    }
+
+    
+    
+}

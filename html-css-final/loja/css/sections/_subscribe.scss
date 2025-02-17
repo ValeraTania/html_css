@@ -1,0 +1,47 @@
+@import '../mixins';
+
+.subscribe{
+    background: $subscribe-bg;
+    
+    @include display($gap:0);
+    text-align: center;
+    padding: 48px 16px;
+
+.subscribe-buttons{
+    @include display();
+    a:first-child{
+        @include button(none,$white,1px solid $white);
+    }
+
+    a:last-child{
+        @include button($white);
+    }
+}
+
+.subscribe-socialMedia{
+    display: none;
+}
+
+   
+}
+
+@media (min-width: 750px){
+
+    .subscribe{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+    .subscribe-buttons{
+
+        flex-direction: row;
+        gap: 0;
+}
+
+ .subscribe-socialMedia{
+    color: $white;
+    @include display(row,32px);
+    padding: 0 24px;
+}
+}
+}

@@ -1,0 +1,38 @@
+@import '../mixins';
+
+footer{
+    background: $footer-bg;
+    color: $white;
+    padding: 48px 0;
+    font-size: 14px;
+   
+    .container{
+        @include display();
+        padding: 24px;
+    }
+
+    ul{
+        line-height: 2rem;
+        list-style-type: none;
+    }
+    li:first-child{
+        font-weight: bold;
+    }
+}
+
+.copyright{
+    @include display();
+    font-size: 10px;
+    padding: 24px;
+
+}
+
+@media (min-width: 750px){
+
+    footer{
+        .container,.copyright{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    }

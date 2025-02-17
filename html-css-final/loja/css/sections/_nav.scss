@@ -1,0 +1,39 @@
+@import '../mixins';
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+
+    i{
+      cursor: pointer;
+    }
+
+    .nav-options{
+      display: none;
+    }
+  
+  }
+  
+  .logo {
+    height: 50px;
+    width: 100px;
+    background: #d9d9d9;
+  }
+
+  @media  (min-width:750px) {
+    .fa-bars{
+      visibility: hidden;
+    }
+
+   nav .nav-options{
+      @include display(row,64px);
+     
+
+      div{
+        @include display(row,4px);
+      }
+    }
+    
+  }

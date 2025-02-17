@@ -1,0 +1,27 @@
+@import '_typography';
+@import '_colors';
+@import '_mixins';
+@import 'sections/_nav';
+@import 'sections/_header';
+@import 'sections/_furniture-img';
+@import 'sections/characteristics';
+@import 'sections/carrousel';
+@import 'sections/nomad';
+@import 'sections/moveEasy';
+@import 'sections/subscribe';
+@import 'sections/footer';
+
+
+//product page
+
+@import 'sections/product-first-section';
+@import 'sections/product-second-section';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
