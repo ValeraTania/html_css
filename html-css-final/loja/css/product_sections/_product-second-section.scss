@@ -2,27 +2,30 @@
 
 .product-features{
     text-align: center;
-    padding: 24px 16px;
 
     &-icons{
+        background: red;
         @include display(row);
+        gap: 1rem;
         flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
         padding-top: 1rem;
-        justify-content: center;
 
-        img{
-            width: 35%;
+       &> img{
+            width: 40%;
 
         }
     }
     
 }
 
-.product-features-content{
+.product-features-content>div{
     @include display();
     padding: 48px 16px;
     text-align: left;
 
+    
     p{
         font-size: 20px;
     }
@@ -44,6 +47,12 @@
             width: 20%;
 
         }
+    }
+    &-content,.content-item{
+        @include display(row);
+        margin-bottom: 3rem;
+
+        
     }
 }
 
@@ -74,11 +83,16 @@
 }
 
 @media (min-width:750px){
+
     .product-recommendation{
+        padding: 48px 16px;
+
+    &> div{
         @include display(row);
 
         h2{
-            display: block;
+            display: inline-block;
         }
     }
+}
 }

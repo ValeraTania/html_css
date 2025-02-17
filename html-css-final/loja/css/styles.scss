@@ -1,27 +1,30 @@
-@import '_typography';
-@import '_colors';
-@import '_mixins';
-@import 'sections/_nav';
-@import 'sections/_header';
-@import 'sections/_furniture-img';
-@import 'sections/characteristics';
-@import 'sections/carrousel';
-@import 'sections/nomad';
-@import 'sections/moveEasy';
-@import 'sections/subscribe';
-@import 'sections/footer';
-
-
-//product page
-
-@import 'sections/product-first-section';
-@import 'sections/product-second-section';
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+@import '_typography';
+@import '_colors';
+@import '_mixins';
+@import 'index_sections/nav';
+@import 'index_sections/_header';
+@import 'index_sections/_furniture-img';
+@import 'index_sections/_characteristics';
+@import 'index_sections/_carrousel';
+@import 'index_sections/_nomad';
+@import 'index_sections/_moveEasy';
+@import 'index_sections/_subscribe';
+@import 'index_sections/_footer';
 
+
+//product page
+
+@import 'product_sections/product-first-section';
+@import 'product_sections/product-second-section';
+
+
+
+//product list page
+@import 'product_list/_product_list_page';
 
