@@ -441,10 +441,13 @@ footer img {
     font-size: 14px;
   }
   header {
-    width: 60%;
+    width: 50%;
+  }
+  header .header--video {
+    width: 70%;
   }
   .simple_works--content {
-    width: 60%;
+    width: 50%;
     justify-self: center;
   }
   .solutions {
@@ -454,7 +457,7 @@ footer img {
     background: #220000;
   }
   .solutions_cards--content {
-    width: 60%;
+    width: 50%;
     justify-self: center;
   }
   .solutions_cards {
@@ -481,7 +484,7 @@ footer img {
   footer img {
     padding: 16px;
   }
-  footer li {
+  footer li, footer .form {
     text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */

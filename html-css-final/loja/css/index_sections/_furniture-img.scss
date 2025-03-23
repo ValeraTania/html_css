@@ -1,36 +1,82 @@
-.furniture-images,.real-life-spaces{
-    text-align: center;
-    padding: 48px 16px;
+.furniture,
+.real-life-spaces {
+  text-align: center;
+  padding: 3rem 0;
 }
 
-.furniture-images-photos,.real-life-spaces-photos{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-top: 28px;
+.furniture-images,
+.real-life-spaces-photos {
+  @include display(row, 1rem);
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  justify-content: center;
+
+  img {
+    width: 45%;
+    border-radius: 4px;
+  }
+}
+
+.characteristics {
+  background: $section-bg;
+  @include display(row);
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 2rem 0;
+
+  &-shipping,
+  &-modular,
+  &-trees {
+    @include display(row, 1rem);
+    padding: 16px;
+    align-items: center;
+  }
+}
+
+.carrousel {
+  text-align: center;
+  width: 95%;
+  padding: 2rem 0;
+}
+.carrousel-images {
+  @include display(row, 1rem);
+  flex-wrap: nowrap;
+  padding: 1rem;
+
+  img {
+    border-radius: 4px;
+    width: 25%;
+  }
+}
+
+//desktop
+@media (min-width: 750px) {
+  .furniture-images {
+    img {
+      width: 30%;
+    }
+  }
+
+  .characteristics {
     justify-content: center;
+    padding: 4rem 0;
 
-
-    img{
-        width: 175px;
-        height: 175px;
-        border-radius: 4px;
+    &-shipping,
+    &-modular,
+    &-trees {
+      width: 30%;
     }
+  }
 
-}
-
-@media  (min-width:750px) {
-    
-
-    .furniture-images-photos{
-        gap: 24px;
-
-        img{
-            width: 390px;
-            height: 220px;
-        }
+  .carrousel {
+    justify-self: center;
+    img {
+      width: 25%;
     }
-
-    
-    
+  }
+  .real-life-spaces-photos {
+    img {
+      width: 20%;
+    }
+  }
 }

@@ -1,150 +1,133 @@
-@import '../mixins';
+@import "../mixins";
 
-.product{
-    width: 95%;
-    justify-self: center;
-   // padding: 48px 24px;
+.product {
+  width: 95%;
+  justify-self: center;
 }
 
-.product-description{
+.product-description {
+  @include display();
+
+  h1 {
+    font-weight: normal;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.product-characteristics {
+  @include display();
+  padding: 24px 0;
+
+  .product-colors {
+    @include display($gap: 8px);
+  }
+
+  .colors {
+    @include display(row, 16px);
+
+    div {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+    }
+    div:nth-child(1) {
+      background: $product-color-blue;
+    }
+
+    div:nth-child(2),
+    div:nth-child(4) {
+      background: $product-color-green;
+    }
+    div:nth-child(3) {
+      background: $product-color-red;
+    }
+    div:nth-child(5),
+    div:nth-child(6) {
+      background: $footer-bg;
+    }
+  }
+}
+
+.product-upgrade {
+  @include display($gap: 8px);
+
+  div {
+    @include display(row, $gap: 16px);
+    color: $product-secondary;
+  }
+
+  a {
+    @include button();
+    margin: 16px 0;
+    width: fit-content;
+    margin-left: auto;
+  }
+}
+
+.product-dimensions {
+  @include display();
+  width: 95%;
+  margin: auto;
+
+  &-text > div {
+    color: $product-secondary;
+    border-bottom: 1px solid $product-secondary;
+    padding: 1rem 0;
+    line-height: 2rem;
+  }
+}
+
+.about {
+  @include display();
+  width: 95%;
+  margin: auto;
+  margin: 48px 24px;
+
+  & > p {
+    font-size: 20px;
+  }
+
+  .paragraphs {
     @include display();
-
-    h1{
-        font-weight: normal;
-    }
-
-    img{
-        width: 100%;
-    }
-
+    line-height: 1.5rem;
+  }
 }
 
-.product-characteristics{
-    @include display();
-    padding: 24px 0;
+@media (min-width: 750px) {
+  .product {
+    @include display(row);
+    justify-content: center;
 
-    .product-colors{
-        @include display($gap:8px);
-    }
-    
-    .colors{
-    
-        @include display(row,16px);
-    
-        
-        div{
-            width: 1rem;
-            height: 1rem;
-            border-radius: 50%;
-    }
-            div:nth-child(1){
-                background: $product-color-blue;
-            }
-    
-            div:nth-child(2),div:nth-child(4){
-                background: $product-color-green;
-            }
-            div:nth-child(3){
-                background: $product-color-red;
-            }
-            div:nth-child(5),div:nth-child(6){
-                background: $footer-bg;
-            }
-    }
-}
-
-.product-upgrade{
-    @include display($gap:8px);
-
-     div{
-        @include display(row,$gap:16px);
-        color: $product-secondary;
-     }
-
-    a{
-        @include button();
-        margin: 16px 0;
-        width: fit-content;
-        margin-left: auto;
-    }
-}
-
-
-@media (min-width:750px){
-    .product{
-        @include display(row);
-        justify-content: center;
-
-        .product-description{
-            width: 60%;
-        }
-
-        .product-characteristics{
-            @include display($gap:16px);
-            width: 40%;
-        }
-
-    }
-}
-
-
-
-
-.product-dimensions{
-    @include display();
-    width: 95%;
-    margin: auto;
-
-    &-text > div{
-        color: $product-secondary;
-        border-bottom: 1px solid $product-secondary;
-        padding: 1rem 0;
-        line-height: 2rem;
+    .product-description {
+      width: 60%;
     }
 
-}
-
-@media (min-width:750px){
-    .product-dimensions{
-        flex-direction: row;
-        gap: 16px;
-
-
-        img,&-text{
-            width: 50%;
-        }
-
-        &-text>div{
-            padding: 8px 0;
-        }
-      
+    .product-characteristics {
+      @include display($gap: 16px);
+      width: 40%;
     }
-}
+  }
 
-.about{
-    @include display();
-    width: 95%;
-    margin: auto;
-    margin: 48px 24px;
+  .product-dimensions {
+    flex-direction: row;
+    gap: 16px;
 
-    &>p{
-        font-size: 20px;
+    img,
+    &-text {
+      width: 50%;
     }
 
-    .paragraphs{
-        @include display();
-        line-height: 1.5rem;
+    &-text > div {
+      padding: 8px 0;
     }
+  }
 
-
-}
-
-@media (min-width:750px){
-    .about{
-
-    &>div{
-        @include display(row);
+  .about {
+    & > div {
+      @include display(row);
     }
- 
-}
+  }
 }

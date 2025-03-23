@@ -1,51 +1,42 @@
-@import '../mixins';
+@import "../mixins";
 
-.nomad{
-    background: $section-bg;
-    @include display($gap:0);
+.nomad {
+  background: $section-bg;
+  @include display($gap: 0);
 
+  &-text {
+    width: 60%;
+    padding: 2rem 1rem;
+    @include display();
+  }
 
-    small{
-        text-decoration: underline;
-        letter-spacing: 0.5rem;
-        font-weight: 500;
-    }
+  small {
+    text-decoration: underline;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+  }
 
-    em{
-        font-weight: 600;
-    }
+  em {
+    font-weight: 600;
+  }
 
-    a{
-        text-decoration: none;
-        color: $black;
-        font-weight: 600;
+  a {
+    text-decoration: none;
+    color: $black;
+    font-weight: 600;
+  }
 
-    }
-
-    img{
-        height: 296px;
-        width: 296px;
-        align-self: flex-end;
-    }
-
-    .nomad-text{
-        padding: 16px;
-        @include display();
-    }
-
+  img {
+    width: 50%;
+    align-self: flex-end;
+  }
 }
 
-@media (min-width:750px){
-
-    .nomad{
-        img{
-            height: 696px;
-            width: 696px;
-            align-self: flex-end;
-        }
-
-        .nomad-text{
-            padding: 148px 0 0 148px;
+@media (min-width: 750px) {
+  .nomad {
+    &-text {
+      width: 30%;
+      padding: 4rem;
     }
-    }
-    }
+  }
+}

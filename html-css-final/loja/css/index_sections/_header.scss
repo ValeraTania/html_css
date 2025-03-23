@@ -1,7 +1,7 @@
 @import '../mixins';
 
 header{
-    background-image: url("/loja/assets/splash-screen.webp");
+    background-image: url("/assets/splash-screen.webp");
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -19,6 +19,7 @@ header{
 
      a{
         @include button();
+        margin: 0 0 1rem 1rem;
           }
 }
 

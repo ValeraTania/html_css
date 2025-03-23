@@ -1,65 +1,67 @@
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
+  nav {
+    .nav--menu {
+      @include display($direction: row);
+      gap: 16px;
+      font-size: $paragraph;
+    }
+  }
 
+  header {
+    width: 50%;
 
-   nav{
-    .nav--menu{
-        @include display($direction:row);
-        gap: 16px;
-        font-size: $paragraph;
-}
-}
+    .header--video {
+      width: 70%;
+    }
+  }
 
-header{
+  .simple_works--content {
+    width: 50%;
+    justify-self: center;
+  }
+
+  .solutions {
     width: 60%;
+  }
 
-}
+  .solutions_cards--container {
+    background: $bg_solutions--desktop;
+  }
 
-    .simple_works--content{
-        width: 60%;
-        justify-self: center;
-    }
+  .solutions_cards--content {
+    width: 50%;
+    justify-self: center;
+  }
 
-    .solutions{
-        width: 60%;
-    }
+  .solutions_cards {
+    width: 25%;
+  }
 
-    .solutions_cards--container{
-        background: $bg_solutions--desktop;
-    }
-
-    .solutions_cards--content{
-        width: 60%;
-        justify-self: center;
-
-    }
-
-    .solutions_cards{
-        width: 25%;
-    }
-
- .innovative_card {
+  .innovative_card {
     width: 20%;
-}
+  }
 
- .cta{
+  .cta {
     width: 90%;
     height: 200px;
     flex-direction: row;
     justify-content: space-around;
- }
+  }
 
-    footer{
-        @include display($direction:row,$justify:space-around,$align:flex-start);
-        padding: 40px 0;
-    
-        img{
-            padding: 16px;
-        }
+  footer {
+    @include display(
+      $direction: row,
+      $justify: space-around,
+      $align: flex-start
+    );
+    padding: 40px 0;
 
-        li{
-            text-align: left;
-        }
-    
+    img {
+      padding: 16px;
     }
 
+    li,.form {
+      text-align: left;
+    }
+  }
 }
