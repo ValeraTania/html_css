@@ -83,8 +83,7 @@
 .about {
   @include display();
   width: 95%;
-  margin: auto;
-  margin: 48px 24px;
+  padding: 2rem;
 
   & > p {
     font-size: 20px;
@@ -100,20 +99,28 @@
   .product {
     @include display(row);
     justify-content: center;
+    width: 90%;
 
     .product-description {
       width: 60%;
     }
 
     .product-characteristics {
-      @include display($gap: 16px);
+      @include display();
       width: 40%;
+    }
+  }
+  .product-upgrade {
+    a {
+      margin: auto;
     }
   }
 
   .product-dimensions {
     flex-direction: row;
     gap: 16px;
+    padding: 4rem 0;
+    width: 90%;
 
     img,
     &-text {
@@ -126,7 +133,10 @@
   }
 
   .about {
-    & > div {
+    width: 90%;
+    justify-self: center;
+
+    .paragraphs {
       @include display(row);
     }
   }

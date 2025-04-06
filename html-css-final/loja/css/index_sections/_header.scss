@@ -1,37 +1,54 @@
-@import '../mixins';
+@import "../mixins";
 
-header{
-    background-image: url("/assets/splash-screen.webp");
-    background-size: cover;
-    background-position: center;
+header {
+  // background-image: url("/assets/splash-screen.webp");
+  // background-size: cover;
+  // background-position: center;
+  // height: 500px;
+  @include display($gap: 0);
+  align-items: start;
+  justify-content: flex-end;
+
+  img {
+    width: fit-content;
+    align-self: center;
     height: 500px;
-    @include display ($gap:0);
-    align-items: start;
-    justify-content: flex-end;
+  }
 
- 
-
-   h1{
-        color: $white;
-        font-weight: normal;
-        padding: 16px;
-    }
-
-     a{
-        @include button();
-        margin: 0 0 1rem 1rem;
-          }
-}
-
-@media  (min-width:750px) {
-  header{
-    justify-content: start;
-
-    h1{
-      padding: 54px  0 0 148px;
-    }
+  h1 {
+    color: $white;
+    font-weight: normal;
+    padding: 16px;
+    position: absolute;
+    top: 400px;
+  }
 
   a {
-    margin: 16px 0 0 148px ;
+    @include button();
+    margin: 0 0 1rem 1rem;
+    position: absolute;
+    bottom: 350px;
   }
-}}
+}
+
+@media (min-width: 750px) {
+  header {
+    justify-content: start;
+
+    img {
+      width: 100%;
+    }
+
+    h1 {
+      padding: 54px 0 0 148px;
+      position: absolute;
+      top: 100px;
+    }
+
+    a {
+      margin: 0 0 0 148px;
+      position: relative;
+      bottom: 360px;
+    }
+  }
+}

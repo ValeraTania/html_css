@@ -1,16 +1,27 @@
-@import '../mixins';
+@import "../mixins";
 
-.easy-to-move{
+.easy-to-move {
+  @include display();
+  align-items: center;
+  padding: 48px 0;
 
-    text-align: center;
-    padding: 48px 0;
+  video {
+    width: 90%;
+    padding: 24px 0;
+  }
 
-    video{
-        width: 100%;
-        padding: 24px 0;
+  a {
+    @include button();
+    width: max-content;
+  }
+}
+
+@media (min-width: 750px) {
+  .easy-to-move {
+    width: 100%;
+
+    video {
+      width: 100%;
     }
-    
-    a{
-        @include button();
-    }
+  }
 }
